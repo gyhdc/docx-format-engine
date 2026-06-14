@@ -1,0 +1,198 @@
+{
+  "version": "0.1",
+  "priority": {
+    "explicit_rules_over_template": true,
+    "preserve_content": true,
+    "preserve_images": true,
+    "preserve_tables": true,
+    "protect_front_matter": true,
+    "allow_unsafe_page_geometry": false
+  },
+  "page": {
+    "paper_size": "A4",
+    "margin_top_cm": 2.5,
+    "margin_bottom_cm": 2.5,
+    "margin_left_cm": 3.0,
+    "margin_right_cm": 2.5
+  },
+  "roles": {
+    "title_zh": {
+      "font_east_asia": "SimHei",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 22,
+      "bold": true,
+      "alignment": "center",
+      "space_before_pt": 0,
+      "space_after_pt": 12
+    },
+    "title_en": {
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 22,
+      "bold": true,
+      "alignment": "center",
+      "space_before_pt": 0,
+      "space_after_pt": 12
+    },
+    "abstract": {
+      "font_east_asia": "SimSun",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 12,
+      "line_spacing": 1.5,
+      "first_line_indent_chars": 2,
+      "alignment": "both"
+    },
+    "keywords": {
+      "font_east_asia": "SimSun",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 12,
+      "line_spacing": 1.5,
+      "alignment": "left"
+    },
+    "heading_1": {
+      "font_east_asia": "SimHei",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 15,
+      "bold": true,
+      "alignment": "left",
+      "space_before_pt": 12,
+      "space_after_pt": 6,
+      "keep_with_next": true
+    },
+    "heading_2": {
+      "font_east_asia": "SimHei",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 14,
+      "bold": true,
+      "alignment": "left",
+      "space_before_pt": 6,
+      "space_after_pt": 6,
+      "keep_with_next": true
+    },
+    "heading_3": {
+      "font_east_asia": "SimHei",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 12,
+      "bold": true,
+      "alignment": "left",
+      "space_before_pt": 6,
+      "space_after_pt": 0,
+      "keep_with_next": true
+    },
+    "body": {
+      "font_east_asia": "SimSun",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 12,
+      "line_spacing": 1.5,
+      "first_line_indent_chars": 2,
+      "alignment": "both",
+      "space_before_pt": 0,
+      "space_after_pt": 0
+    },
+    "figure_caption": {
+      "font_east_asia": "SimSun",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 10.5,
+      "alignment": "center",
+      "space_before_pt": 6,
+      "space_after_pt": 6,
+      "expected_position": "below_object"
+    },
+    "table_caption": {
+      "font_east_asia": "SimSun",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 10.5,
+      "alignment": "center",
+      "space_before_pt": 6,
+      "space_after_pt": 6,
+      "expected_position": "above_object"
+    },
+    "reference_heading": {
+      "font_east_asia": "SimHei",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 14,
+      "bold": true,
+      "alignment": "center",
+      "space_before_pt": 12,
+      "space_after_pt": 12,
+      "keep_with_next": true
+    },
+    "reference_entry_zh": {
+      "font_east_asia": "SimSun",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 10.5,
+      "line_spacing": 1.0,
+      "hanging_indent_chars": 2,
+      "alignment": "both"
+    },
+    "reference_entry_en": {
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 10.5,
+      "line_spacing": 1.0,
+      "hanging_indent_chars": 2,
+      "alignment": "left"
+    },
+    "cover_label": {
+      "font_east_asia": "SimSun",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 12
+    },
+    "cover_value": {
+      "font_east_asia": "SimSun",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 12
+    },
+    "header": {
+      "font_east_asia": "SimSun",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 9,
+      "alignment": "center"
+    },
+    "footer": {
+      "font_east_asia": "SimSun",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 9,
+      "alignment": "center"
+    },
+    "table_of_contents": {
+      "font_east_asia": "SimSun",
+      "font_ascii": "Times New Roman",
+      "font_size_pt": 10.5
+    }
+  },
+  "detection": {
+    "title_zh_patterns": [],
+    "title_en_patterns": [],
+    "heading_1_patterns": [
+      "^第[一二三四五六七八九十]+章",
+      "^\\d+\\s+"
+    ],
+    "heading_2_patterns": [
+      "^\\d+\\.\\d+\\s+"
+    ],
+    "heading_3_patterns": [
+      "^\\d+\\.\\d+\\.\\d+\\s+"
+    ],
+    "figure_caption_patterns": [
+      "^图\\s*\\d+",
+      "^Figure\\s+\\d+"
+    ],
+    "table_caption_patterns": [
+      "^表\\s*\\d+",
+      "^Table\\s+\\d+"
+    ],
+    "reference_patterns": [
+      "^\\[\\d+\\]",
+      "^\\d+\\."
+    ]
+  },
+  "structure": {
+    "required_sections": [
+      {
+        "role": "acknowledgements",
+        "heading_text": "致谢",
+        "placeholder_text": "请在此补充致谢内容。",
+        "insert_before_role": "reference_heading"
+      }
+    ]
+  }
+}

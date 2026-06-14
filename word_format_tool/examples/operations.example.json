@@ -1,0 +1,49 @@
+{
+  "version": "0.1",
+  "operations": [
+    {
+      "type": "insert_section_before",
+      "target": {
+        "text": "第一章 绪论",
+        "role": "heading_1",
+        "after_role": "table_of_contents"
+      },
+      "break_type": "next_page"
+    },
+    {
+      "type": "set_header",
+      "section_start": {
+        "text": "第一章 绪论",
+        "role": "heading_1",
+        "after_role": "table_of_contents"
+      },
+      "text": "学校名称学士学位论文",
+      "alignment": "center",
+      "bottom_border": true
+    },
+    {
+      "type": "set_page_number",
+      "section_start": {
+        "text": "第一章 绪论",
+        "role": "heading_1",
+        "after_role": "table_of_contents"
+      },
+      "start": 1,
+      "alignment": "center"
+    },
+    {
+      "type": "set_paragraph_pagination",
+      "target": {
+        "text": "第一章 绪论",
+        "role": "heading_1",
+        "after_role": "table_of_contents"
+      },
+      "keep_with_next": true,
+      "keep_together": true,
+      "widow_control": true
+    },
+    {
+      "type": "request_field_update"
+    }
+  ]
+}

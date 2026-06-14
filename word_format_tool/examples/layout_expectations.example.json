@@ -1,0 +1,15 @@
+{
+  "version": "0.1",
+  "section_count_at_least": 2,
+  "body_start": {
+    "text": "第一章 绪论",
+    "role": "heading_1",
+    "after_role": "table_of_contents"
+  },
+  "body_first_heading_equals": "第一章 绪论",
+  "toc_before_body": true,
+  "section_header_equals": "学校名称学士学位论文",
+  "section_has_page_field": true,
+  "section_page_number_starts_at": 1,
+  "update_fields_enabled": true
+}

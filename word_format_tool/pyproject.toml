@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "word-format-tool"
+version = "0.6.1"
+description = "Deterministic Word thesis format inspection and repair toolkit."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "python-docx>=1.1.0",
+  "lxml>=4.9",
+  "pydantic>=2.6",
+  "typer>=0.12",
+  "rich>=13.7",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+visual = [
+  "PyMuPDF>=1.24",
+  "Pillow>=10",
+  "pywin32>=306; platform_system == 'Windows'",
+]
+
+[project.scripts]
+wordfmt = "word_format_tool.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["word_format_tool*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
